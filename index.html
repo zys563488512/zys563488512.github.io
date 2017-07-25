@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Jay Blog</title>
+  <title>JayZhang Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Jay Blog">
+<meta property="og:title" content="JayZhang Blog">
 <meta property="og:url" content="https://zys563488512.github.io/index.html">
-<meta property="og:site_name" content="Jay Blog">
+<meta property="og:site_name" content="JayZhang Blog">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jay Blog">
+<meta name="twitter:title" content="JayZhang Blog">
   
-    <link rel="alternate" href="/atom.xml" title="Jay Blog" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="JayZhang Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -33,7 +33,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Jay Blog</a>
+        <a href="/" id="logo">JayZhang Blog</a>
       </h1>
       
     </div>
@@ -91,6 +91,9 @@
 <p>在LotsOfGreetings组建中将name作为一个属性来定制，这样可以复用这一组建来制作各种不同的“问候语”。上面的例子把LotsOfGreetings组件写在JSX语句中，用法和内置组建并无二致。可以用此方法搭建一套自己的基础UI框架。</p>
 <p>###part_02:State(状态)<br>我们使用两种数据来控制一个组件: props和 state。<br>props是在父组件中指定，而且一经指定，在被指定的组件的生命周期中则不再改变。对于需要改变的数据，我们需要使用state。</p>
 <p>一般来说，你需要在constructor(构造函数)中初始化state，然后在需要修改的是调用setState方法。</p>
+<p>#####eg:假如制作一段不停闪烁的文字。文字内容本身在组件创建时就已经指定好了，所以文字内容应该是一个prop。而文字的显示或隐藏的状态则是随着时间变化的，因此这一状态应该是state。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line">import React, &#123;</div><div class="line">  AppRegistry,</div><div class="line">  Component,</div><div class="line">  Image,</div><div class="line">  Text,</div><div class="line">  View</div><div class="line">&#125; from &apos;react-native&apos;</div><div class="line">class Blink extends Component &#123;</div><div class="line">  constructor(props) &#123;</div><div class="line">    super(props);</div><div class="line">    this.state = &#123;showText: true&#125;;</div><div class="line">    //每1000毫秒对showText状态做一次取反操作</div><div class="line">    setInterval(() =&gt; &#123;</div><div class="line">      this.setState(previousState =&gt; &#123;</div><div class="line">        return &#123;showText: !previousState.showText&#125;;</div><div class="line">      &#125;);</div><div class="line">    &#125;,1000);</div><div class="line">  &#125;</div><div class="line">  render() &#123;</div><div class="line">    //根据当前showText的值决定是否显示text内容</div><div class="line">    let display = this.state.showText ? this.props.text : &apos; &apos;;</div><div class="line">    return (</div><div class="line">      &lt;Text&gt;&#123;display&#125;&lt;/Text&gt;</div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">class Project extends Component &#123;</div><div class="line">  render() &#123;</div><div class="line">    return (</div><div class="line">      &lt;View&gt;</div><div class="line">        &lt;Blink text=&apos;I love to blink&apos; /&gt;</div><div class="line">        &lt;Blink text=&apos;什么鬼啊，蛇精病啊！&apos; /&gt;</div><div class="line">        &lt;Blink text=&apos;什么鬼，全是英文!&apos; /&gt;</div><div class="line">        &lt;Blink text=&apos;想是什么鬼就是什么鬼！&apos; /&gt;</div><div class="line">      &lt;/View&gt;</div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">AppRegistry.registerComponent(&apos;Project&apos;, () =&gt; Project);</div></pre></td></tr></table></figure>
+<p>实际开发中，一般不会在定时器函数(setInterval、setTimeout等)中来操作state。典型的场景是在接收到服务器返回的新数据，或是用户输入数据后。可以使用一些“状态容器”，比如Redux来统一管理数据流。</p>
 
       
     </div>

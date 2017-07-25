@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Swift3.0学习 | Jay Blog</title>
+  <title>React-native 学习 | Jay Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="####part_01:关于 Swift 1234567891011part_01:关于 Swift（About Swift）	Swift 是一种新的编程语言，用于编写 iOS，macOS，watchOS 和 tvOS 的应用程序。Swift 结合了 C 和 Objective-C 的优点并且不受 C 兼容性的限制。Swift 采用安全的编程模式并添加了很多新特性，这将使编程更简单，更灵活，也更有">
+  <meta name="description" content="###part_01:Props(属性)大多数组件在创建时就可以使用各种参数来进行定制。用于定制这些参数就称为props(属性)。 以常见的基础组件Image为例，在创建一个图片时，可以传入一个名为source的prop来制定要显示图片的地址，以及使用名为style的prop来控制其尺寸。 #####eg: Image1234567891011121314151617181920212223242">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Swift3.0学习">
+<meta property="og:title" content="React-native 学习">
 <meta property="og:url" content="https://zys563488512.github.io/2017/07/09/Lesson_01/index.html">
 <meta property="og:site_name" content="Jay Blog">
-<meta property="og:description" content="####part_01:关于 Swift 1234567891011part_01:关于 Swift（About Swift）	Swift 是一种新的编程语言，用于编写 iOS，macOS，watchOS 和 tvOS 的应用程序。Swift 结合了 C 和 Objective-C 的优点并且不受 C 兼容性的限制。Swift 采用安全的编程模式并添加了很多新特性，这将使编程更简单，更灵活，也更有">
-<meta property="og:updated_time" content="2017-07-09T06:53:54.000Z">
+<meta property="og:description" content="###part_01:Props(属性)大多数组件在创建时就可以使用各种参数来进行定制。用于定制这些参数就称为props(属性)。 以常见的基础组件Image为例，在创建一个图片时，可以传入一个名为source的prop来制定要显示图片的地址，以及使用名为style的prop来控制其尺寸。 #####eg: Image1234567891011121314151617181920212223242">
+<meta property="og:updated_time" content="2017-07-25T07:24:04.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Swift3.0学习">
-<meta name="twitter:description" content="####part_01:关于 Swift 1234567891011part_01:关于 Swift（About Swift）	Swift 是一种新的编程语言，用于编写 iOS，macOS，watchOS 和 tvOS 的应用程序。Swift 结合了 C 和 Objective-C 的优点并且不受 C 兼容性的限制。Swift 采用安全的编程模式并添加了很多新特性，这将使编程更简单，更灵活，也更有">
+<meta name="twitter:title" content="React-native 学习">
+<meta name="twitter:description" content="###part_01:Props(属性)大多数组件在创建时就可以使用各种参数来进行定制。用于定制这些参数就称为props(属性)。 以常见的基础组件Image为例，在创建一个图片时，可以传入一个名为source的prop来制定要显示图片的地址，以及使用名为style的prop来控制其尺寸。 #####eg: Image1234567891011121314151617181920212223242">
   
     <link rel="alternate" href="/atom.xml" title="Jay Blog" type="application/atom+xml">
   
@@ -77,7 +77,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Swift3.0学习
+      React-native 学习
     </h1>
   
 
@@ -85,26 +85,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>####part_01:关于 Swift</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">part_01:关于 Swift（About Swift）</div><div class="line"></div><div class="line">	Swift 是一种新的编程语言，用于编写 iOS，macOS，watchOS 和 tvOS 的应用程序。Swift 结合了 C 和 Objective-C 的优点并且不受 C 兼容性的限制。Swift 采用安全的编程模式并添加了很多新特性，这将使编程更简单，更灵活，也更有趣。Swift 是基于成熟而且倍受喜爱的 Cocoa 和 Cocoa Touch 框架，它的降临将重新定义软件开发。</div><div class="line"></div><div class="line">	Swift 的开发从很久之前就开始了。为了给 Swift 打好基础，苹果公司改进了编译器，调试器和框架结构。我们使用自动引用计数（Automatic Reference Counting, ARC）来简化内存管理。我们在 Foundation 和 Cocoa 的基础上构建框架栈使其完全现代化和标准化。 Objective-C 本身支持块、集合语法和模块，所以框架可以轻松支持现代编程语言技术。正是得益于这些基础工作，我们现在才能发布这样一个用于未来苹果软件开发的新语言。</div><div class="line"></div><div class="line">	Objective-C 开发者对 Swift 并不会感到陌生。它采用了 	Objective-C 的命名参数以及动态对象模型，可以无缝对接到现有的 Cocoa 框架，并且可以兼容 Objective-C 代码。在此基础之上，Swift 还有许多新特性并且支持过程式编程和面向对象编程。</div><div class="line"></div><div class="line">	Swift 对于初学者来说也很友好。它是第一个既满足工业标准又像脚本语言一样充满表现力和趣味的系统编程语言。它支持代码预览(playgrounds)，这个革命性的特性可以允许程序员在不编译和运行应用程序的前提下运行 Swift 代码并实时查看结果。</div><div class="line"></div><div class="line">	Swift 将现代编程语言的精华和苹果工程师文化的智慧结合了起来。编译器对性能进行了优化，编程语言对开发进行了优化，两者互不干扰，鱼与熊掌兼得。Swift 既可以用于开发 “hello, world” 这样的小程序，也可以用于开发一套完整的操作系统。所有的这些特性让 Swift 对于开发者和苹果来说都是一项值得的投资。</div></pre></td></tr></table></figure>
-<p>####part_02:基础部分</p>
-<p>###常量和变量</p>
-<p>常量和变量把一个名字（比如 maximumNumberOfLoginAttempts 或者 welcomeMessage ）和一个指定类型的值（比如数字 10 或者字符串 “Hello” ）关联起来。常量的值一旦设定就不能改变，而变量的值可以随意更改。</p>
-<p>声明常量和变量</p>
-<p>常量和变量必须在使用前声明，用 let 来声明常量，用 var 来声明变量。下面的例子展示了如何用常量和变量来记录用户尝试登录的次数：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">let maximumNumberOfLoginAttempts = 10</div><div class="line">var currentLoginAttempt = 0</div></pre></td></tr></table></figure>
-<p>这两行代码可以被理解为：</p>
-<p>“声明一个名字是 maximumNumberOfLoginAttempts 的新常量，并给它一个值 10 。然后，声明一个名字是 currentLoginAttempt 的变量并将它的值初始化为 0 。”</p>
-<p>在这个例子中，允许的最大尝试登录次数被声明为一个常量，因为这个值不会改变。当前尝试登录次数被声明为一个变量，因为每次尝试登录失败的时候都需要增加这个值。</p>
-<p>你可以在一行中声明多个常量或者多个变量，用逗号隔开：</p>
-<pre><code>var x = 0.0, y = 0.0, z = 0.0
-</code></pre><p>注意：</p>
-<p>如果你的代码中有不需要改变的值，请使用 let 关键字将它声明为常量。只将需要改变的值声明为变量。</p>
-<p>###类型标注</p>
-<p>当你声明常量或者变量的时候可以加上类型标注（type annotation），说明常量或者变量中要存储的值的类型。如果要添加类型标注，需要在常量或者变量名后面加上一个冒号和空格，然后加上类型名称。</p>
-<p>这个例子给 welcomeMessage 变量添加了类型标注，表示这个变量可以存储 String 类型的值：</p>
-<pre><code>var welcomeMessage: String
-</code></pre><hr>
+        <p>###part_01:Props(属性)<br>大多数组件在创建时就可以使用各种参数来进行定制。用于定制这些参数就称为props(属性)。</p>
+<p>以常见的基础组件Image为例，在创建一个图片时，可以传入一个名为source的prop来制定要显示图片的地址，以及使用名为style的prop来控制其尺寸。</p>
+<p>#####eg: Image<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">import React, &#123;</div><div class="line">  AppRegistry,</div><div class="line">  Component,</div><div class="line">  Image,</div><div class="line">  Text,</div><div class="line">  View</div><div class="line">&#125; from &apos;react-native&apos;</div><div class="line"></div><div class="line">class Project extends Component &#123;</div><div class="line">  render() &#123;</div><div class="line">    let pic = &#123;</div><div class="line">      uri: &apos;https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg&apos;</div><div class="line">    &#125;;</div><div class="line">    </div><div class="line">    return (</div><div class="line">      </div><div class="line">      &lt;Image source=&#123;pic&#125; style=&#123;&#123;width: 193, height: 110&#125;&#125; /&gt; </div><div class="line">⚠️注意: return下不能同时存在俩个视图控件，否则会报错</div><div class="line">//       &lt;Image </div><div class="line">//         style=&#123;&#123;</div><div class="line">//           width: 300,</div><div class="line">//           height: 200,</div><div class="line">//         &#125;&#125;</div><div class="line">//         source=&#123;&#123;uri: &apos;https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg&apos;&#125;&#125;</div><div class="line">//         /&gt;</div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">AppRegistry.registerComponent(&apos;Project&apos;, () =&gt; Project);</div></pre></td></tr></table></figure></p>
+<p>⚠️注意: {pic}外围有一层括号，我们需要用括号来吧pic这个变量嵌入到JSX语句中。括号的意思是括号内部为一个js变量或表达式，需要执行后取值。因此我们可以把任何合法的JavaScript表达式通过括号嵌入到JSX语句中。</p>
+<p>#####eg:this.props<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">import React, &#123;</div><div class="line">  AppRegistry,</div><div class="line">  Component,</div><div class="line">  Image,</div><div class="line">  Text,</div><div class="line">  View</div><div class="line">&#125; from &apos;react-native&apos;</div><div class="line">class LotsOfGreetings extends Component &#123;</div><div class="line">  render() &#123;</div><div class="line">    return (</div><div class="line">      &lt;Text&gt; Hello &#123;this.props.name&#125;! &lt;/Text&gt;</div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">class Project extends Component &#123;</div><div class="line">  render() &#123;</div><div class="line">    return (</div><div class="line">      &lt;View style=&#123;&#123;alignItems: &apos;center&apos;&#125;&#125;&gt;</div><div class="line">        &lt;LotsOfGreetings name=&apos;Rexxar&apos; /&gt;</div><div class="line">        &lt;LotsOfGreetings name=&apos;Jaina&apos; /&gt;</div><div class="line">        &lt;LotsOfGreetings name=&apos;Valeera&apos; /&gt;</div><div class="line">        &lt;Image source=&#123;pic&#125; style=&#123;&#123;width: 193, height: 110&#125;&#125; /&gt; </div><div class="line">      &lt;/View&gt;</div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">AppRegistry.registerComponent(&apos;Project&apos;, () =&gt; Project);</div></pre></td></tr></table></figure></p>
+<p>在LotsOfGreetings组建中将name作为一个属性来定制，这样可以复用这一组建来制作各种不同的“问候语”。上面的例子把LotsOfGreetings组件写在JSX语句中，用法和内置组建并无二致。可以用此方法搭建一套自己的基础UI框架。</p>
+<p>###part_02:State(状态)<br>我们使用两种数据来控制一个组件: props和 state。<br>props是在父组件中指定，而且一经指定，在被指定的组件的生命周期中则不再改变。对于需要改变的数据，我们需要使用state。</p>
+<p>一般来说，你需要在constructor(构造函数)中初始化state，然后在需要修改的是调用setState方法。</p>
 
       
     </div>
@@ -116,16 +104,6 @@
   </div>
   
     
-<nav id="article-nav">
-  
-  
-    <a href="/2017/07/09/SUMMARY/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title"></div>
-    </a>
-  
-</nav>
-
   
 </article>
 
@@ -158,15 +136,7 @@
       <ul>
         
           <li>
-            <a href="/2017/07/09/Lesson_01/">Swift3.0学习</a>
-          </li>
-        
-          <li>
-            <a href="/2017/07/09/SUMMARY/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2017/07/09/hello-world/">个人学习总结</a>
+            <a href="/2017/07/09/Lesson_01/">React-native 学习</a>
           </li>
         
       </ul>
